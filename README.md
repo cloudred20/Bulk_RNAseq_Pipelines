@@ -50,3 +50,4 @@ Bulk RNA-seq enables quantitative assessment of gene expression changes across b
 
 ### Publication 
 * https://doi.org/10.1016/j.jcmgh.2025.101466
+* https://onlinelibrary.wiley.com/doi/10.1111/pai.70315?af=R
