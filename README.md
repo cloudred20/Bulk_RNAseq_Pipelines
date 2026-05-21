@@ -18,11 +18,9 @@ Bulk RNA-seq enables quantitative assessment of gene expression changes across b
 * Generate alignment QC metrics using **Qualimap 2.2.1**.
 * Quantify reads at the gene level using featureCounts in **subread 2.0.2** with GENCODE annotations.
   
-**B. Pseudo-alignment Workflow (Fast and scalable)**
+**B. Pseudo-alignment Workflow (fast and scalable)**
 * Perform transcript quantification using **kallisto 0.46.0** against the GRCh38.p13 reference transcriptome.
 * Filter low-abundance genes and normalize expression using **edgeR 3.38.4** with TMM normalization.
-* Evaluate sample relationships using PCA and clustering diagnostics in R.
-* Perform differential gene expression analysis using **limma 3.52.4**.
 
 #### (3) Differential Expression and Statistical Analysis
 * Estimate dispersion and model gene expression differences using limma or DESeq2, depending on workflow.
