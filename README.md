@@ -14,18 +14,17 @@ Bulk RNA-seq enables quantitative assessment of gene expression changes across b
 #### (2) Read Alignment or Pseudo-alignment and Quantification
 
 **Two supported workflows:**
-
-**A. Pseudo-alignment Workflow (Fast and scalable)**
-* Perform transcript quantification using **kallisto 0.46.0** against the GRCh38.p13 reference transcriptome.
-* Filter low-abundance genes and normalize expression using **edgeR 3.38.4** with TMM normalization.
-* Evaluate sample relationships using PCA and clustering diagnostics in R.
-* Perform differential gene expression analysis using **limma 3.52.4**.
-
-**B. Alignment-based Workflow (full genome alignment)**
+**A. Alignment-based Workflow (full genome alignment)**
 * Align reads to GRCh38.p13 using **STAR 2.7.1a**.
 * Convert, sort, and index BAM files using **samtools 1.12**.
 * Generate alignment QC metrics using **Qualimap 2.2.1**.
 * Quantify reads at the gene level using featureCounts in **subread 2.0.2** with GENCODE annotations.
+  
+**B. Pseudo-alignment Workflow (Fast and scalable)**
+* Perform transcript quantification using **kallisto 0.46.0** against the GRCh38.p13 reference transcriptome.
+* Filter low-abundance genes and normalize expression using **edgeR 3.38.4** with TMM normalization.
+* Evaluate sample relationships using PCA and clustering diagnostics in R.
+* Perform differential gene expression analysis using **limma 3.52.4**.
 
 #### (3) Differential Expression and Statistical Analysis
 * Estimate dispersion and model gene expression differences using limma or DESeq2, depending on workflow.
