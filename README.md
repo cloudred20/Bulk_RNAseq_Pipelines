@@ -1,5 +1,3 @@
-# Under Construction: Expected release: Q1 2026.
-
 ## HPC-Ready Pipelines for Bulk RNA-seq Processing and Analysis
 This repository provides an HPC-optimized workflow for processing and analyzing bulk RNA-seq data using . Integrates best-practice tools for sequencing quality control, read trimming, alignment or pseudo-alignment, quantification, differential gene expression, and functional enrichment. Designed for scalability and reproducibility on high-performance computing clusters, this workflow enables robust transcriptomic analysis across large sample cohorts.
 
